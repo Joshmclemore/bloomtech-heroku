@@ -5,7 +5,7 @@ const server = express();
 server.use(express.json());
 
 server.get('/', (req, res) => {
-    // res.json('Hello World!');
+    console.log('sanity check!')
     res.json({MESSAGE: process.env.ABC});
 });
 
